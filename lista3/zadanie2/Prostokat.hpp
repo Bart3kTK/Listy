@@ -1,0 +1,16 @@
+#ifndef PROSTOKAT_HPP
+#define PROSTOKAT_HPP
+#include "Figura.hpp"
+#include "Czworokat.hpp"
+
+
+class Prostokat: public Czworokat{
+
+    public:
+        Prostokat(int bok1, int bok2, int bok3, int bok4, int kat): 
+        Czworokat(bok1, bok2, bok3, bok4, kat) {};
+        virtual double obliczPole();
+        virtual void dajNazwe();
+};
+
+#endif
